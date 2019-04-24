@@ -9,6 +9,7 @@ private:
     std::string name;
     std::string phone;
     std::string homeAddress;
+
 public:
     Agent(std::string agentId, std::string name, std::string phone, std::string homeAddress) {
         this->agentId = agentId;
@@ -70,7 +71,6 @@ private:
     std::vector<Client*> vclient;
 
 public:
-
     AgentClientRelationship(Agent *agentPtr = nullptr) {
         this -> agentPtr = agentPtr;
     }
