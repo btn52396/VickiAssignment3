@@ -132,8 +132,12 @@ int main() {
     // findClientLocation test
     std::string clientId = "C100";
     Client* c = ac1.findClientLocation(clientId);
-    std::string name = c->getName();
-    std::cout << " Name of client " << clientId << " is: " << name << std::endl;
+    if (c != nullptr) {
+        std::string name = c->getName();
+        std::cout << " Name of client " << clientId << " is: " << name << std::endl;
+    } else {
+        std::cout << " Client not found " << std::endl;
+    }
 
     std::cout << "\n All done!\n";
 
