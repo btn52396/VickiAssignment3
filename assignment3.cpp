@@ -136,7 +136,7 @@ int main() {
         std::string name = c->getName();
         std::cout << " Name of client " << clientId << " is: " << name << std::endl;
     } else {
-        std::cout << " Client not found " << std::endl;
+        std::cout << " Client not found" << std::endl;
     }
 
     std::cout << "\n All done!\n";
